@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    border: 1px solid red;
+    background-color: bisque;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+}
+.child1{
+    color: aliceblue;
+    border: 1px solid pink;
+    background-color: black;
+    height: 400px;
+    width: 350px;
+    order: 4;
+}
+.child2{
+    border: 1px solid chartreuse;
+    background-color: brown;
+    height: 400px;
+    width: 350px;
+}
+.child3{
+    border: 1px solid yellow;
+    background-color: blue;
+    height: 400px;
+    width: 350px;
+}
+.child4{
+    border: 1px solid beige;
+    background-color: azure;
+    height: 400px;
+    width: 350px;
+}

@@ -1,0 +1,127 @@
+.box-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 100px 600px 100px;
+  border: 2px solid black;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #d2c6c6;
+}
+/* .box1 {
+  border: 2px solid black;
+  background-color: #f3f368;
+
+  grid-row: 1;
+  grid-column: 3/ 5;
+} */
+
+.box1 {
+  size: 100px;
+  background-color: #ffffff;
+  height: 250px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+  display: grid;
+  gap: 7px;
+  width: 220px;
+}
+.box2 {
+  size: 100px;
+  background-color: #e75555;
+  height: 250px;
+  /* grid-column-start: 2;
+  grid-column-end:5;
+  grid-row-start: 1;
+  grid-row-end: 1; */
+}
+.box3 {
+  size: 100px;
+  background-color: #7a7676;
+  height: 250px;
+}
+.box4 {
+  size: 100px;
+  background-color: #fff;
+  height: 250px;
+}
+.box11 {
+  border: 1px ;
+  background-color: #f3f368;
+  size: 50%;
+  height: 100px;
+  width: 100px;
+  /* grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); */
+
+  justify-content: space-between;
+  row-gap: 2px;
+  display: flex;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+
+
+.box12 {
+  border: 1px;
+  background-color: #8ecef8;
+  size: 50%;
+  height: 100px;
+  width: 100px;
+  /* grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); */
+
+  justify-content: space-between;
+  row-gap: 2px;
+  display: flex;
+ 
+  margin-top: 5px;
+  margin-right: 5px;
+
+
+}
+.box13 {
+  border: 1px;
+  background-color: #f3f368;
+  size: 50%;
+  height: 100px;
+  width: 100px;
+  /* grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); */
+
+  justify-content: space-between;
+  row-gap: 2px;
+  display: flex;
+}
+.box13 {
+  border: 1px;
+  background-color: #83c0ec;
+  size: 50%;
+  height: 100px;
+  width: 100px;
+  /* grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); */
+
+  justify-content: space-between;
+  row-gap: 2px;
+  display: flex;
+  margin-left: 5px;
+}
+.box14 {
+  border: 1px;
+  background-color: #f3f368;
+  size: 50%;
+  height: 100px;
+  width: 100px;
+  /* grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); */
+
+  justify-content: space-between;
+  row-gap: 2px;
+  display: flex;
+  margin-right: 5px;
+}
