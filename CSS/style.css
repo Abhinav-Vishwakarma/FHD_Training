@@ -1,35 +1,47 @@
+/* body{
+    background-color:brown;
+} */
  /* p,h2{
     background-color: aqua;
     color: blueviolet;
-}
-#para1{
-    font-family: Arial, Helvetica, sans-serif;
-}  */
+ }
+
+ #para1{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: xx-large;
+ } */
+/* 
+ .para1{
+    background-color: aquamarine;
+ } */
+
 
  div~p{
-    background-color: aqua;
+    background-color: aquamarine;
  }
+
  p:hover{
-    background-color: pink;
+    background-color: cadetblue;
     font-size: xx-large;
  }
+
  p::before{
-    content: "hiii";
+    content: "Hiiiiiiii";
  }
+
  p::after{
     background-color: brown;
-    content: "hello"
-    ;
+    content: "Hii, using content append in paragraph";
  }
+
  p::selection{
-    background-color: greenyellow;
+    background-color: chartreuse;
  }
+
  p:nth-child(2){
-    background-color: rgb(246, 233, 214);
+    background-color: chocolate;
  }
- p:nth-of-type(3){
-    background-color: yellow;
- }
+
  div p:nth-of-type(1){
-   background-color: pink;
+
  }
