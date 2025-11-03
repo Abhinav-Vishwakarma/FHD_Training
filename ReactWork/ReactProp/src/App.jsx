@@ -1,5 +1,7 @@
-import './App.css'
-import Student from './components/Student'
+import './App.css';
+import Student from './components/Student';
+import StateHandling from './components/StateHandling';
+import ImageManipulation from './components/ImageManipulation';
 function App() {
   const student = [{
     name:"Abhinav", 
@@ -21,11 +23,14 @@ function App() {
   return (
     <>
     {/* <Student props = {student} /> */}
-    {
+    {/* {
       student.map((ele, idx) =>(
         <Student props = {ele} key = {idx}/>
       ))
-    }
+    } */}
+
+    {/* <StateHandling /> */}
+    <ImageManipulation />
     </>
   )
 }
