@@ -1,9 +1,12 @@
 import React from 'react'
 import './student.css'
-export default function Student(props) {
+export default function Student({props}) {
   return (
     <div class="container">
-        <h1 class="heading">Student Info</h1>
+        <div>
+          <h1 class="heading">Student Info</h1>
+          <img class="photo" src={props.img} ></img>
+        </div>
         <div class="box">
         <h2>Name: <span>{props.name}</span></h2>
         <h2>Branch: <span>{props.branch}</span></h2>
