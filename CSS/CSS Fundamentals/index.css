@@ -1,0 +1,14 @@
+*{
+    /* background-color: rgb(49, 49, 49);
+    
+    color:white; */
+    
+}
+.featureSection{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    border:1px solid;
+    border-radius: 10px;
+    border-top-right-radius:1px solid blue;
+    background:transparent;
+
+}
