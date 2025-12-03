@@ -1,84 +1,40 @@
-// let a =30;
-// if(a >20){
-//     let  a = 50;                                
-//     console.log("inside cond " +a);
-// }
-// else{
-//     console.log("inside else");
-// }
-// console.log("a outside " +a);
+const consoleDiv = document.getElementById("console");
 
-// function greet(msg){
-//     // console.log("hello");
-//     return "hello"+ msg;
-// }
-// const msg1 = greet(" good morning");
-// console.log(msg1);
-
-
-// fun as an expression
-// const data = function greet(msg){
-//     return "hello"+ msg;
-// }
-// const msg1 = data(" good morning");
-// console.log(msg1);
-
-// anonymous fun (which dont have name)
-// fun as an expression
-// const data = function (msg){
-//     return "hello"+ msg;
-// }
-// const msg1 = data(" good morning");
-// console.log(msg1);
-
-// arrow fun
-// const data = ()=>{
-//     console.log("heyy");
-// }
-// data();
-
-// const data = (msg)=>{
-//     return "heyy " + msg;                  
-// }
-// const msg1 = data("gm");
-// console.log(msg1);
-
-// const data = msg=> msg;
-// const data1 = data("helloo");
-// console.log(data1);
-
-// IIFE immediate invoke fun expression
-// (()=>{
-//     console.log("heeeuuu");
-// })();
-
-// setTimeout(()=>{console.log("hello")}, 5000);
-// setInterval(()=>{ console.log("heeeyyy")}, 1000);
-
-// default parameter
-// function greeting(msg = " Hiii"){
-//     console.log("hello " + msg);
-// }
-// greeting("welcome to abes");
-
-function selectLanguage(lang){
-    let data;
-    if(lang == "java"){
-        function javaCompiler(){
-            return " Hey, Java Compiler calling...";
-        }
-        data = javaCompiler();
+function formatValue(value) {
+    if (typeof value === "object" && value !== null) {
+        // nicely formatted JSON output
+        return JSON.stringify(value, null, 2);
     }
-    else if(lang == "c"){
-        function cCompiler(){
-            return "Hey, C Compiler";
-        }
-        data = cCompiler();
-    }
-    else{
-        data = "no compiler avail";
-    }
-    return data;
+    return String(value);
 }
-const data1 = selectLanguage("java");
-console.log(data1);
+
+function printToScreen(...messages) {
+    const line = document.createElement("pre");  // <pre> keeps formatting
+    line.style.margin = "0";
+    line.textContent = messages.map(formatValue).join(" ");
+    consoleDiv.appendChild(line);
+    consoleDiv.scrollTop = consoleDiv.scrollHeight;
+}
+
+
+function clg(...messages) {
+    printToScreen(...messages);
+}
+
+
+const originalLog = console.log;
+console.log = function (...messages) {
+    printToScreen(...messages);
+    originalLog.apply(console, messages);
+};
+
+// let name = prompt("enter the name");
+// let age = prompt("enter your age");
+
+
+
+// clg("your name is " + name + " and you are "+age+" year old")
+
+document.getElementById("changeBtn").addEventListener("click",()=>{
+    document.getElementById("text").innerHTML="Jaadduuuuuu!😁";
+})

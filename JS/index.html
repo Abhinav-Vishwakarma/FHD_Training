@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Custom Console</title>
+    <style>
+        body{
+            font-size:40px;
+        }
+        #changeBtn{
+            font-size:25px;
+        }
+        #console {
+            background: #111;
+            color: #0f0;
+            padding: 10px;
+            font-family: monospace;
+            height: 100vh;
+            overflow-y: auto;
+            border: 1px solid #444;
+            font-size:25px;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- <div id="console"></div> -->
+     <p id = "text">Original Text</p>
+     <button id="changeBtn">Click me to see MAGiC🥲</button>
+    
     <script src="index.js"></script>
 </body>
 </html>
